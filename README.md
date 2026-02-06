@@ -1,4 +1,4 @@
-# Gemini skills
+# Gemini API skills
 
 A library of skills for the Gemini API, SDK and model interactions.
 
@@ -24,6 +24,8 @@ building apps that use the Gemini API.
 ```sh
 npx skills add google-gemini/gemini-skill --skill gemini-api --global
 ```
+
+## Disclaimer
 
 This is not an officially supported Google product. This project is not
 eligible for the [Google Open Source Software Vulnerability Rewards
