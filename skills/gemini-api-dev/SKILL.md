@@ -93,7 +93,7 @@ func main() {
 **Always use the latest REST API discovery spec as the source of truth for API definitions** (request/response schemas, parameters, methods). Fetch the spec when implementing or debugging API integration:
 
 - **v1beta** (default): `https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta`  
-  Use this unless the integration is explicitly pinned to v1. The official SDKs (google-genai, @google/genai) target v1beta.
+  Use this unless the integration is explicitly pinned to v1. The official SDKs (google-genai, @google/genai, google.golang.org/genai) target v1beta.
 - **v1**: `https://generativelanguage.googleapis.com/$discovery/rest?version=v1`  
   Use only when the integration is specifically set to v1.
 
