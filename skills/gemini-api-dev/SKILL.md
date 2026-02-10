@@ -28,7 +28,7 @@ The Gemini API provides access to Google's most advanced AI models. Key capabili
 
 ## SDKs
 
-- **Python**: `google-genai`install with `pip install google-genai`
+- **Python**: `google-genai` install with `pip install google-genai`
 - **JavaScript/TypeScript**: `@google/genai` install with `npm install @google/genai`
 - **Go**: `google.golang.org/genai` install with `go get google.golang.org/genai`
 
@@ -87,6 +87,17 @@ func main() {
 	fmt.Println(resp.Text)
 }
 ```
+
+## API spec (source of truth)
+
+**Always use the latest REST API discovery spec as the source of truth for API definitions** (request/response schemas, parameters, methods). Fetch the spec when implementing or debugging API integration:
+
+- **v1beta** (default): `https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta`  
+  Use this unless the integration is explicitly pinned to v1. The official SDKs (google-genai, @google/genai, google.golang.org/genai) target v1beta.
+- **v1**: `https://generativelanguage.googleapis.com/$discovery/rest?version=v1`  
+  Use only when the integration is specifically set to v1.
+
+When in doubt, use v1beta. Refer to the spec for exact field names, types, and supported operations.
 
 ## How to use the Gemini API
 
