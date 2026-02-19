@@ -2,6 +2,28 @@
 
 A library of skills for the Gemini API, SDK and model interactions.
 
+## About
+
+LLMs have fixed knowledge, being trained at a specific point in time. Software
+dev is fast paced and changes often, where new libraries are launched every day
+and best practices evolve quickly.
+
+This leaves a knowledge gap that language models can't solve on their own. For
+example, models don't know about themselves when they're trained, and they
+aren't necessarily aware of subtle changes in best practices (like [thought
+circulation](https://ai.google.dev/gemini-api/docs/thinking#signatures)) or SDK
+changes.
+
+[Skills](https://agentskills.io/) are a lightweight technique for adding
+relevent context to your agents. This repo contains skills related to building
+apps powered by the Gemini API.
+
+### Performance
+
+Our evaluations found that adding this skill improved an agent's ability to
+generate correct API code following best practices to 87% with Gemini 3 Flash
+and 96% with Gemini 3 Pro.
+
 ## Installation
 
 Install from this repository using `npx skills`.
